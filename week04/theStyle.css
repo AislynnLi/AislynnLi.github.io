@@ -1,0 +1,127 @@
+body{
+    background-color: yellow;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'New Tegomin', serif;
+    background-image:url(background1.jpeg);
+    background-size: contain;
+}
+
+.pissing {
+    color: brown;
+}
+
+.writing{
+    color:brown;
+}
+
+.letter{
+    color: forestgreen;
+    position:relative;
+    right: auto;
+    text-align: right;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 30px;
+}
+
+#fake {
+    right: auto;
+}
+
+#truth{
+    text-align: center;
+    font-family: 'Nosifer', cursive;
+    display:none;
+    transition: display 2s;
+}
+
+.hidden{
+    display: none;
+}
+
+div:hover #hidden0 {
+    display: inline-block;
+}
+div:hover #hidden1 {
+    display: inline-block;
+}
+div:hover #hidden2 {
+    display: inline-block;
+}
+div:hover #hidden3 {
+    display: inline-block;
+}
+
+.write {
+    cursor: zoom-in;
+}
+
+.lines {
+    position:fixed;
+    text-align: left;
+    width:100%;
+    top:30vh;
+    font-family: 'Rubik Burned', cursive;
+    font-size: 40px;
+    color:darkblue
+}
+
+img {
+    width:40vw;
+    display: inline;
+    flex-wrap: wrap;
+}
+
+#question{
+    position: relative;
+    top: -50vh;
+    left: 15vw;
+}
+
+.bubbleleft {
+    position: relative;
+  font-family: 'Yuji Boku', serif;
+  font-size: 18px;
+  line-height: 24px;
+  width: 300px;
+  background: DarkGoldenRod;
+  border-radius: 40px;
+  border-width: thick;
+  padding: 24px;
+  text-align: center;
+  color: #000;
+  box-shadow: -3px 10px 5px rgb(184, 150, 11) inset, -10px 10px 5px Chocolate;
+  }
+
+  .bubble-bottom-left::before {
+    content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 12px solid transparent;
+  border-right: 24px solid DarkGoldenRod;
+  border-top: 12px solid DarkGoldenRod;
+  border-bottom: 20px solid transparent;
+  right: 32px;
+  bottom: -24px;
+  }
+  
+ li{
+    color:red;
+ }
+
+ .canceled{
+    text-decoration: line-through;
+ }
+
+ div:hover #truth {
+    display: inline-block;
+}
+
+#pen {
+    position: absolute;
+    right:0px;
+    width:15vw;
+    display: inline;
+}
+
