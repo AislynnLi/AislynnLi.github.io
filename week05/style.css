@@ -1,0 +1,85 @@
+body {
+    background-color: #212121;
+  }
+
+#heading {
+    color: AntiqueWhite;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Nothing You Could Do', cursive;
+}
+  
+.image-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    overflow: hidden;
+    top:0px;
+    left:-150px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    column-gap: 30px;
+}
+  
+.media {
+    /* display:block; */
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: AntiqueWhite;
+    
+    border-color: white;
+    border-width: 10px;
+    border-style:ridge; 
+}
+  
+.media:hover {
+    cursor: zoom-in;
+}
+  
+img{
+    width: 100%;
+    z-index: -1;
+    margin: auto;
+    transform: scale(1);
+    transition: all ease-in-out 0.5s;
+    filter: blur(15px);
+}
+  
+.image-details {
+    word-wrap:normal;
+    color: white;
+    font-size: 15px;
+    z-index: 4;
+    margin-left: 5px;
+    padding:3px;
+    font-family: 'Special Elite', cursive;
+    color: black;
+}
+
+#fear:hover {
+    filter: blur(0px);
+}
+#baby:hover {
+    filter: blur(0px);
+}
+#straight:hover {
+    filter: blur(0px);
+}
+#moment:hover {
+    filter: blur(0px);
+}
+#freak:hover {
+    filter: blur(0px);
+}
+#happy:hover {
+    filter: blur(0px);
+}
+
+
+
+  
