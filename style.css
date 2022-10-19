@@ -1,0 +1,27 @@
+p {
+    margin:2%; 
+    width: 80%;
+    font-style: oblique; 
+    font-family: cursive; 
+    font-size: large;
+    text-align: center; 
+    font-size: 30px;
+    
+    border-style: groove; 
+    border-width: 5px;
+    background-color:lightskyblue;
+
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+
+    border-radius: 1000px;
+}
+
+p:hover {
+    background-color:deepskyblue;
+}
+
+h1 {
+    margin-top: 30px;
+}
