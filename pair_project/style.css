@@ -273,7 +273,7 @@ body{
   .menu_1{
     position: relative;
     display: flex;
-    left: 60px;
+    left: 80px;
   }
 
   .menu_2{
@@ -326,7 +326,7 @@ body{
 
   #menu_2_position{
     position: relative;
-    left:30px;
+    left:50px;
     top:10px;
   }
 
@@ -378,7 +378,7 @@ body{
 
   #menu_3_position{
     position: relative;
-    left:30px;
+    left:50px;
     top:-20px;
   }
 
@@ -459,7 +459,7 @@ body{
 
   #aesthetics {
     position: absolute;
-    top:1%;
+    top:-3%;
     left: 25%;
   }
 
@@ -749,4 +749,8 @@ body{
     position: absolute;
     top: 330px;
     left: 920px;
+  }
+
+  details:hover{
+    cursor: pointer;
   }
