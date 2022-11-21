@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>🦷 Winter Vibe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src = "dom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+  </head>
+  <body>
+
+    <audio id="eng_song">
+        <source src="audio/english.mp3" type="audio/ogg">
+    </audio>
+
+    <audio id="japan_song">
+        <source src="audio/japan.mp3" type="audio/ogg">
+    </audio>
+
+    <audio id="korean_song">
+        <source src="audio/korean.mp3" type="audio/ogg">
+    </audio>
+      
+      
+
+
+
+
+<div id="canvas"></div>
+
+
+    <div id="container">
+
+        <div id="text">
+            Merry Christmas
+    
+        </div>
+
+
+      <div>
+        <label class="emoji" for="time">&#127926;</label>
+        <br>
+        <button onclick="playEng()" type="button">ENGLISH</button>
+      
+        <button onclick="playJapan()" type="button">日本語</button> 
+  
+        <button onclick="playKorean()" type="button">한국어</button>
+  
+        <button onclick="pause()" type="button">&#9654;</button>
+      </div>
+
+      <br>
+
+      <div>
+        <label class="emoji" for="time">&#9729;&#65039;</label>
+        <input type="range" id="time" class="slider" min="215" max="245">
+      </div>
+
+      <br>
+
+      <div>
+        <label class="emoji" for="temp">&#10052;&#65039;</label>
+        <input type="range" id="temp" class="slider" min="90" max="280">
+      </div>
+
+      <br>
+      <div>
+        <label class="emoji" for="time">🥶</label>
+      </div>
+
+    </div>
+
+
+
+    <script src='js/script.js'></script>
+
+  </body>
+</html>

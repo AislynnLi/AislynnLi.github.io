@@ -1,0 +1,109 @@
+body{
+    background-image: url(assets/image6.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.button_display{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    gap: 10%;
+    align-content: space-around;
+
+    top:30%;
+
+    width: 20%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+
+.buttons{
+    width: 60%;
+    height:10%;
+}
+
+.input_display{
+    display:inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    gap: 10%;
+
+    
+    position: relative;
+
+    top:-20%;
+    left:33%;
+
+    width: 50%;
+    height: 13%;
+}
+
+#name{
+}
+
+#input_text{
+}
+
+#quote{
+    background-color: whitesmoke;
+    border-radius: 10%;
+    opacity: 70%;
+    display: inline-flex;
+    position: relative;
+    top:10%;
+    left:12%;
+    width: 50%;
+    height: 50%;
+}
+
+#quote_input_name{
+    position: relative;
+    top:70%;
+    left:60%;
+    width: 50%;
+    font-size: 30px;
+}
+
+#quote_input_text{
+    position: relative;
+    left:-20%;
+    width: 70%;
+    font-size: 30px;
+
+    word-wrap: break-word;
+}
+
+button {
+  border-radius: 100px;
+  padding: 7px 20px;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+  color: #fff;
+  background-color: #38D2D2;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05);
+}
+
+#button3:hover{
+    box-shadow: rgba(25, 212, 97, 0.35) 0 -25px 18px -14px inset,rgba(187, 115, 44, 0.25) 0 1px 2px,rgba(20, 67, 176, 0.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(185, 44, 187, 0.25) 0 16px 32px;
+    background-color: #d4b565;
+    transform: scale(1.05);
+}
