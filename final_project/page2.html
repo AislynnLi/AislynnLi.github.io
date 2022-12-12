@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>
+            Final Project
+        </title>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="sketch.js" defer></script>
+        <script src="source.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+        <!-- or -->
+        <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    </head>
+
+</html>
+
+<body>
+    <!-- stroke -->
+    <!-- <div class="strokes" id="upper"></div>
+    <div class="strokes" id="bottom"></div> -->
+    <div class="upper_box">
+    <div id="1" class="strokes"></div>
+    <div id="2" class="strokes"></div>
+    <div id="3" class="strokes"></div>
+    <div id="4" class="strokes"></div>
+    <div id="5" class="strokes"></div>
+    <div id="6" class="strokes"></div>
+    <div id="7" class="strokes"></div>
+    <div id="8" class="strokes"></div>
+    <div id="9" class="strokes"></div>
+    <div id="10" class="strokes"></div>
+    <div id="11" class="strokes"></div>
+    <div id="12" class="strokes"></div>
+    <div id="13" class="strokes"></div>
+    <div id="14" class="strokes"></div>
+    <div id="15" class="strokes"></div>
+    <div id="16" class="strokes"></div>
+    </div>
+
+    <div class="bottom_box">
+    <div id="17" class="strokes"><button></button></div>
+    <div id="18" class="strokes"><button></button></div>
+    <div id="19" class="strokes"><button></button></div>
+    <div id="20" class="strokes"><button></button></div>
+    <div id="21" class="strokes"><button></button></div>
+    <div id="22" class="strokes"><button></button></div>
+    <div id="23" class="strokes"><button></button></div>
+    <div id="24" class="strokes"><button></button></div>
+    <div id="25" class="strokes"><button></button></div>
+    <div id="26" class="strokes"><button></button></div>
+    <div id="27" class="strokes"><button></button></div>
+    <div id="28" class="strokes"><button></button></div>
+    <div id="29" class="strokes"><button></button></div>
+    <div id="30" class="strokes"><button></button></div>
+    <div id="31" class="strokes"><button></button></div>
+    <div id="32" class="strokes"><button></button></div>
+    </div>
+
+    <div id="test" class="draggable">
+    </div>
+
+    <div class="menu">
+        <div class="page" id="page1"> <a href="final.html">page1</a> </div>
+        <div class="page" id="page2"> <a href="page2.html">page2</a> </div>
+        <div class="page" id="page3"> <a href="page3.html">page3</a> </div>
+        <button id="screenshot"> save </button>
+        <button > 
+            <a href="#popup1">instructions</a>
+            </button>
+      </div>
+
+      <div id="popup1" class="overlay">
+        <div class="popup">
+  
+         <a class="close" href="#">X</a >
+         <div class="content">
+  
+            <h3>Second Goal</h3>
+            <p class="up"> It's starting to get a little boring. We didn't come here for a Chinese class. What if we replace the strokes with patterns? That sounds fun! <br><br>
+                The second goal is using the strokes to build the radicals we just learned. On top of that, replace strokes with patterns to design your own radicals!
+           </p>
+     
+            <h3 style="margin-top: 160px;">Instructions</h3>
+            <li class="up">Press stroke buttons to get the strokes</li>
+            <li class="up">Drag strokes to "spell" a radical</li>
+            <li class="up">Double click strokes to replace them with patterns </li>
+            <li class="up">Drag the border of strokes/patterns to change their sizes (Hover on strokes/patterns and press SHIFT to see the borders)</li>
+            <li class="up">Hover on the strokes and press BACKSPACE to delete strokes</li>
+            <li class="up">Press the save button to save your design</li>
+       
+         </div>
+        </div>
+    </div>
+  
+
+    <script>page_on = 2</script>
+</body>
+

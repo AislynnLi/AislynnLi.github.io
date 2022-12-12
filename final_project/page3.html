@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>
+            Final Project
+        </title>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="sketch.js" defer></script>
+        <script src="source.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+        <!-- or -->
+        <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.3/FileSaver.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+    </head>
+
+</html>
+
+<body>
+    <!-- stroke -->
+    <!-- <div class="strokes" id="upper"></div>
+    <div class="strokes" id="bottom"></div> -->
+    <div class="upper_box">
+    <div id="1" class="strokes"></div>
+    <div id="2" class="strokes"></div>
+    <div id="3" class="strokes"></div>
+    <div id="4" class="strokes"></div>
+    <div id="5" class="strokes"></div>
+    <div id="6" class="strokes"></div>
+    <div id="7" class="strokes"></div>
+    <div id="8" class="strokes"></div>
+    <div id="9" class="strokes"></div>
+    <div id="10" class="strokes"></div>
+    <div id="11" class="strokes"></div>
+    <div id="12" class="strokes"></div>
+    <div id="13" class="strokes"></div>
+    <div id="14" class="strokes"></div>
+    <div id="15" class="strokes"></div>
+    <div id="16" class="strokes"></div>
+    </div>
+
+    <div class="bottom_box">
+    <div id="17" class="strokes"><button></button></div>
+    <div id="18" class="strokes"><button></button></div>
+    <div id="19" class="strokes"><button></button></div>
+    <div id="20" class="strokes"><button></button></div>
+    <div id="21" class="strokes"><button></button></div>
+    <div id="22" class="strokes"><button></button></div>
+    <div id="23" class="strokes"><button></button></div>
+    <div id="24" class="strokes"><button></button></div>
+    <div id="25" class="strokes"><button></button></div>
+    <div id="26" class="strokes"><button></button></div>
+    <div id="27" class="strokes"><button></button></div>
+    <div id="28" class="strokes"><button></button></div>
+    <div id="29" class="strokes"><button></button></div>
+    <div id="30" class="strokes"><button></button></div>
+    <div id="31" class="strokes"><button></button></div>
+    <div id="32" class="strokes"><button></button></div>
+    </div>
+
+    <div id="test" class="draggable">
+    </div>
+
+    <div class="menu">
+        <div class="page" id="page1"> <a href="final.html">page1</a> </div>
+        <div class="page" id="page2"> <a href="page2.html">page2</a> </div>
+        <div class="page" id="page3"> <a href="page3.html">page3</a> </div>
+        <button id="screenshot"> save </button>
+        <button > 
+            <a href="#popup1">instructions</a>
+            </button>
+      </div>
+
+      <div id="popup1" class="overlay">
+        <div class="popup">
+  
+         <a class="close" href="#">X</a >
+         <div class="content">
+  
+            <h3>Third Goal</h3>
+            <p class="up"> What? Designing radicals doesn't satisfy you anymore? Fine...I guess it's time for you to design your own Chinese characters!<br><br>
+                The third goal is to build your own Chinese characters based on the meanings of radicals. If it happens to exist, congratulations! If it doesn't, write a letter to the Chinese committee. It might come into being next year...
+           </p>
+     
+            <h3 style="margin-top: 230px;">Instructions</h3>
+            <li class="up">Hover on radical buttons to get the meanings of radicals</li>
+            <li class="up">Press radical buttons to get the radicals</li>
+            <li class="up">Drag radicals to "spell" a character</li>
+            <li class="up">Drag the border of radicals to change their sizes</li>
+            <li class="up">Hover on the radicals and press BACKSPACE to delete them</li>
+            <li class="up">Press the save button to save your design</li>
+       
+         </div>
+        </div>
+    </div>
+  
+
+        <!-- <button id="screenshot"></button> -->
+      <script>page_on = 3</script>
+</body>
+

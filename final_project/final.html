@@ -1,0 +1,139 @@
+<html>
+    <head>
+        <title>
+            Final Project
+        </title>
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="sketch.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+        <!-- or -->
+        <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+
+    </head>
+
+</html>
+
+<body>
+    <!-- stroke -->
+    <!-- <div class="strokes" id="upper"></div>
+    <div class="strokes" id="bottom"></div> -->
+    <div class="upper_box">
+    <div id="1" class="strokes"></div>
+    <div id="2" class="strokes"></div>
+    <div id="3" class="strokes"></div>
+    <div id="4" class="strokes"></div>
+    <div id="5" class="strokes"></div>
+    <div id="6" class="strokes"></div>
+    <div id="7" class="strokes"></div>
+    <div id="8" class="strokes"></div>
+    <div id="9" class="strokes"></div>
+    <div id="10" class="strokes"></div>
+    <div id="11" class="strokes"></div>
+    <div id="12" class="strokes"></div>
+    <div id="13" class="strokes"></div>
+    <div id="14" class="strokes"></div>
+    <div id="15" class="strokes"></div>
+    <div id="16" class="strokes"></div>
+    </div>
+
+    <div class="bottom_box">
+    <div id="17" class="strokes"><button></button></div>
+    <div id="18" class="strokes"><button></button></div>
+    <div id="19" class="strokes"><button></button></div>
+    <div id="20" class="strokes"><button></button></div>
+    <div id="21" class="strokes"><button></button></div>
+    <div id="22" class="strokes"><button></button></div>
+    <div id="23" class="strokes"><button></button></div>
+    <div id="24" class="strokes"><button></button></div>
+    <div id="25" class="strokes"><button></button></div>
+    <div id="26" class="strokes"><button></button></div>
+    <div id="27" class="strokes"><button></button></div>
+    <div id="28" class="strokes"><button></button></div>
+    <div id="29" class="strokes"><button></button></div>
+    <div id="30" class="strokes"><button></button></div>
+    <div id="31" class="strokes"><button></button></div>
+    <div id="32" class="strokes"><button></button></div>
+    </div>
+
+    <div id="test" class="draggable">
+    </div>
+
+    <div class="menu">
+      <div class="page" id="page1"> <a href="final.html">page1</a> </div>
+      <div class="page" id="page2"> <a href="page2.html">page2</a> </div>
+      <div class="page" id="page3"> <a href="page3.html">page3</a></div>
+      <button id="turn_left">☚</button>
+      <button id="turn_right">☛</button>
+      <button > 
+      <a href="#popup1">instructions</a>
+      </button>
+    </div>
+
+    <div class="right" id="pie">丿</div>
+    <div class="right" id="shu">丨</div>
+    <div class="right" id="dian">丶</div>
+    <div class="right" id="hengzhegou">㇊</div>
+    <div class="right" id="heng">一</div>
+    <div class="right" id="shugou">亅</div>
+    <div class="right" id="ti">㇀</div>
+
+    <div id="answer1" class="answers"> 
+      <p>亻</p> <br> 
+      Definition:
+      <li>Person Related</li>
+      Examples : <br> 
+      <li>仁、位、你</li>
+    </div>
+
+    <div id="answer2" class="answers"> 
+      <p>讠</p> <br> 
+      Definition:
+      <li>Verbal</li>
+      Examples : <br> 
+      <li>计、论、识</li>
+    </div>
+
+    <div id="answer3" class="answers"> 
+      <p>扌</p> <br> 
+      Definition:
+      <li>Hand Related</li>
+      Examples : <br> 
+      <li>扛、担、摘</li>
+    </div>
+
+
+
+    <div id="popup1" class="overlay">
+      <div class="popup">
+
+       <a class="close" href="#">X</a >
+       <div class="content">
+
+       <h3>First Goal</h3>
+       <p class="up">If we think of strokes as the alphabet of Chinese, what would Chinese look like? <br><br>
+          Our first goal is using strokes to "spell" the radicals, which are part of characters that have their own meanings. Wait a minute, are we talking about root words?
+      </p>
+
+       <h3 style="margin-top: 150px;">Instructions</h3>
+       <li class="up">In the stroke buttons, look for buttons with the same strokes as the middle of the screen</li>
+       <li class="up">Press stroke buttons to get the strokes</li>
+       <li class="up">Drag strokes to the right place</li>
+       <li class="up">Drag the border of strokes to change their sizes (Hover on strokes and press SHIFT to see the borders)</li>
+       <li class="up">Hover on the strokes and press BACKSPACE to delete strokes</li>
+       <li class="up">Press the hand buttons on the right to get to the next radical</li>
+       
+     
+       </div>
+      </div>
+  </div>
+
+
+
+    <script>page_on = 1</script>
+</body>
+
