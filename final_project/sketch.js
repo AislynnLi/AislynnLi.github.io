@@ -9,6 +9,10 @@ var bottom_images = []
 var pianpang_information = []
 var bushou_information = []
 
+let audio_key = document.getElementById("key");
+let audio_write = document.getElementById("write");
+let audio_change = document.getElementById("change");
+
 var answer_on = 1;
 let ni_pie = document.getElementById("pie")
 let ni_shu = document.getElementById("shu")
@@ -34,6 +38,7 @@ var exist_2 = false;
 var exist_3 = false;
 
 function change_answer_left(){
+    audio_key.play();
 
     if (answer_on > 1){
         answer_on = answer_on-1
@@ -74,6 +79,7 @@ function change_answer_left(){
     }
 }
 function change_answer_right(){
+    audio_key.play();
     if (answer_on < 3){
         answer_on = answer_on+1
         exist_1 = false;
@@ -139,64 +145,6 @@ fetch('data.json')
         bottom_images.push(stroke.image)
     });
     console.log(upper_images)
-    // console.log(json.upper_strokes[0].name)
-    // console.log(upper_strokes_data)
-
-// $.getJSON( "data.json", function( data ) {
-//     var items = [];
-//     $.each( data, function( key, val ) {
-//       items.push( "<li id='" + key + "'>" + val + "</li>" );
-//     });
-   
-//     $( "<ul/>", {
-//       "class": "my-new-list",
-//       html: items.join( "" )
-//     }).appendTo( "body" );
-
-//     function getData(obj){
-//         $.each(obj.data , function(key , value){ // First Level
-//              $.each(value.stars , function(k , v ){  // The contents inside stars
-//                  console.log(v)
-//              });     
-//         });
-//   }
-
-//     console.log(items)
-//   });
-
-// start ajax request
-// $.ajax({
-//     url: "data.json",
-//     //force to handle it as text
-//     dataType: "text",
-//     success: function(data) {
-
-//         //data downloaded so we call parseJSON function 
-//         //and pass downloaded data
-//         var json = $.parseJSON(data);
-//         //now json variable contains data in json format
-//         //let's display a few items
-//         for (var i=0;i<json.length;++i)
-//         {
-//             console.log(json)
-//             $('#results').append('<div class="name">'+json[i].name+'</>');
-//         }
-//     }
-// });
-
-// $.ajax({
-//     url: "data.json",
-//     dataType: "text",
-//     // Parameters 
-
-//     success : function(obj){
-//           $.each(obj.data , function(key , value){ // First Level
-//                $.each(value.stars , function(k , v ){  // The contents inside stars
-//                    console.log(v)
-//                });     
-//           });
-//     }
-// });
 
 function getRandomArrayElements(arr, count) {
     var shuffled = arr.slice(0), i = arr.length, min = i - count, temp, index;
@@ -222,6 +170,7 @@ let page1 = document.getElementById('page1')
 page1.addEventListener('click',change_page_1)
 
 function change_page_1(){
+    audio_key.play();
     let page_on = 1;
     console.log(page_on)
 }
@@ -230,6 +179,7 @@ let page2 = document.getElementById('page2')
 page2.addEventListener('click',change_page_2)
 
 function change_page_2(){
+    audio_key.play();
     let page_on = 2;
     console.log(page_on)
 }
@@ -238,36 +188,20 @@ let page3 = document.getElementById('page3')
 page3.addEventListener('click',change_page_3)
 
 function change_page_3(){
+    audio_key.play();
     let page_on = 3;
     console.log(page_on)
 }
 
-// let page2 = document.getElementById('page2')
-// page2.addEventListener('click',change_page)
+let popup = document.getElementById("popup1")
+let popup1 = document.getElementById("instruction")
+popup.addEventListener('click',sound)
+popup1.addEventListener('click',sound)
 
-// function change_page(){
-//     page_on = 2;
-// }
+function sound(){
+    audio_key.play();
+}
 
-// let page2 = document.getElementById('page2')
-// page2.addEventListener('click',change_page)
-
-// function change_page(){
-//     page_on = 2;
-// }
-
-// let upper_strokes = document.getElementById('upper');
-
-// for(let i = 0; i<upper_strokes_data.length; i++){
-//     console.log(upper_strokes[i])
-//     upper_strokes.innerText = upper_strokes.innerText+ upper_strokes_data[i]
-// }
-
-// let bottom_strokes = document.getElementById('bottom');
-
-// for(let i = 0; i<bottom_strokes_data.length; i++){
-//     bottom_strokes.innerText = bottom_strokes.innerText+ bottom_strokes_data[i]
-// }
 
 for(let i = 0; i<16; i++){
     if (page_on != 3){
@@ -372,8 +306,10 @@ let theMain = document.getElementById(""+i.path[0].id+"")
 }
 
 function focus_upper(i){
+    audio_key.play();
     for(let r = 0; r<16; r++){
         if(i.path[0].innerText == upper_strokes_data[r]){
+            audio_key.play();
             var div = document.createElement('div');
                 div.className = "draggable";
                 div.idName = '' + r + ''
@@ -400,6 +336,7 @@ function focus_upper(i){
                 function logKey(e) {
                 if (`${e.code}` == "Backspace" && div.style.color == "darkred") {
                   div.style.display = "none"
+                  audio_key.play();
                 }
                 if ((`${e.code}` == "ShiftLeft" ||  `${e.code}` == "ShiftRight" )&& div.style.color == "darkred") {
                     console.log("here")
@@ -417,6 +354,7 @@ function focus_upper(i){
             div.addEventListener("dblclick", change_inside);
 
             function change_inside() {
+                audio_change.play();
                 const img = document.createElement("img");
                 img.style.maxWidth = "100%";
                 img.style.objectFit = "contain";
@@ -456,6 +394,7 @@ function focus_upper(i){
                 function logKey(e) {
                 if (`${e.code}` == "Backspace" && div.style.color == "darkred") {
                   div.style.display = "none"
+                  audio_key.play();
                 }
                 if ((`${e.code}` == "ShiftLeft" ||  `${e.code}` == "ShiftRight" )&& div.style.color == "darkred") {
                     console.log("here")
@@ -478,6 +417,7 @@ function focus_upper(i){
               }
 
             function change_inside() {
+                audio_change.play();
                 const img = document.createElement("img");
                 img.style.maxWidth = "100%";
                 img.style.objectFit = "contain";
@@ -511,6 +451,7 @@ function focus_upper(i){
                 function logKey(e) {
                 if (`${e.code}` == "Backspace" && div.style.color == "darkred") {
                   div.style.display = "none"
+                  audio_key.play();
                 }
                 if ((`${e.code}` == "ShiftLeft" ||  `${e.code}` == "ShiftRight") && div.style.color == "darkred") {
                     console.log("here")
@@ -555,6 +496,7 @@ function focus_upper(i){
                 function logKey(e) {
                 if (`${e.code}` == "Backspace" && div.style.color == "darkred") {
                   div.style.display = "none"
+                  audio_key.play();
                 }
                 if ((`${e.code}` == "ShiftLeft" ||  `${e.code}` == "ShiftRight" )&& div.style.color == "darkred") {
                     console.log("here")
@@ -569,11 +511,6 @@ function focus_upper(i){
                 div.style.border = "green dotted 0px"
               }
             if (page_on != 2){
-            // div.addEventListener("dblclick", delete_me);
-
-            // function delete_me() {
-            //     div.style.display = "none"
-            // }
         }
         }
 }
@@ -600,17 +537,11 @@ interact('.draggable')
 
       // call this function on every dragend event
       end (event) {
+        audio_write.play()
         var textEl = event.target.querySelector('p')
 
         if (page_on == 1){
             console.log(event.target.id)
-
-
-        //     let distance_1 = 
-        //   (Math.sqrt(Math.pow(event.pageX - ni_pie.offsetLeft - 1/2*ni_pie.offsetWidth, 2) +
-        //              Math.pow(event.pageY - ni_pie.offsetTop- 1/2*ni_pie.offsetHeight,2) | 0))
-        //     .toFixed(2)
-        //     console.log(distance_1)
         
         if(answer_on == 1){
         if(event.target.id == 2){
@@ -753,31 +684,6 @@ interact('.draggable')
         }
 
         console.log("working")
-
-
-
-    //     if (distance_1 != none && distance_2 != none){
-    //     let distance = distance_1 + distance_2
-    //     if (distance<40){
-    //         answer.style.display = "inline"
-    //     } else {
-    //         answer.style.display = "none"
-    //     }
-    // }
-
-// 可以用但不好用
-        // event.target.style.color = "black"
-        // if (event.shiftKey) {
-        //     event.target.style.border = "green dashed 2px"
-        // } else {
-        //     event.target.style.border = "green solid 0px"
-        // }
-        
-    // //size
-    // Me = event.target;
-    // console.log(Me)
-    // console.log(event.target)
-
       }
     }
   })
@@ -821,6 +727,9 @@ interact('.draggable')
         //   } else {
         //     console.log("The SHIFT key was NOT pressed!");
         //   }
+      },
+      end (event) {
+        audio_write.play();
       }
     },
     modifiers: [
@@ -896,16 +805,38 @@ window.dragMoveListener = dragMoveListener
 // screenshot
 if (page_on != 1){
 document.getElementById('screenshot').addEventListener('click', function() {
-    html2canvas(document.querySelector('body'), {
-        onrendered: function(canvas) {
-            canvas.download = "screenshot.png";
+    html2canvas(document.querySelector("body")).then(canvas => {
+        audio_key.play();
+        // document.body.appendChild(canvas)
+        canvas.download = "screenshot.png";
             // Canvas2Image.saveAsPNG(canvas).download = "screenshot.png";
             // Canvas2Image.saveAsPNG(canvas).href = canvas.toDataURL("image/jpeg");
           return Canvas2Image.saveAsPNG(canvas);
-        }
     });
+
+    // capture();
 });
 }
+
+// const capture = async () => {
+//     const canvas = document.createElement("canvas");
+//     const context = canvas.getContext("2d");
+//     const video = document.createElement("video");
+  
+//     try {
+//       const captureStream = await navigator.mediaDevices.getDisplayMedia();
+//       video.srcObject = captureStream;
+//       context.drawImage(video, 0, 0, window.width, window.height);
+//       const frame = canvas.toDataURL("image/png");
+//       captureStream.getTracks().forEach(track => track.stop());
+//       window.location.href = frame;
+//       console.log(frame)
+//     } catch (err) {
+//       console.error("Error: " + err);
+//     }
+//   };
+  
+//   capture();
 
 //json
 })

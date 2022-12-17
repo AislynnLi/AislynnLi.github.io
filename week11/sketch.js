@@ -14,6 +14,7 @@
 
   let audio = document.getElementById("song1");
   let audio2 = document.getElementById("song2");
+  let popup = document.getElementById("popup1");
 
   function upload_input_name(){
     quote_input_name.textContent = "- "+ username.value;

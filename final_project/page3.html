@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="style.css">
         <script src="sketch.js" defer></script>
         <script src="source.js" defer></script>
+        <script src="html2canvas.js" defer></script>
         <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
         <!-- or -->
         <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
@@ -70,7 +71,7 @@
         <div class="page" id="page2"> <a href="page2.html">page2</a> </div>
         <div class="page" id="page3"> <a href="page3.html">page3</a> </div>
         <button id="screenshot"> save </button>
-        <button > 
+        <button id="instruction"> 
             <a href="#popup1">instructions</a>
             </button>
       </div>
@@ -98,6 +99,12 @@
         </div>
     </div>
   
+    <audio id="key">
+        <source src="audio/key.mp3" type="audio/ogg">
+      </audio>
+      <audio id="write">
+        <source src="audio/write.mp3" type="audio/ogg">
+      </audio>
 
         <!-- <button id="screenshot"></button> -->
       <script>page_on = 3</script>

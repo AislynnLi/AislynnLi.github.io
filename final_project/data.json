@@ -116,7 +116,7 @@
         "image":"assets/brush.png"
       },
       {
-        "name": "𠄎",
+        "name":  "𠄎",
         "image":"assets/face.png"
       },
       {
@@ -317,7 +317,7 @@
       },
       {
         "name":"川",
-        "meaning":"river"
+        "meaning":"stream"
       },
       {
         "name":"寸",
