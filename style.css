@@ -26,6 +26,10 @@ a{
 
 p:hover {
     background-color:deepskyblue;
+    animation-name: color, scale;
+    animation-iteration-count: infinite, infinite;
+    animation-duration: 3s,3s;
+    animation-timing-function: ease linear; 
 }
 
 h1 {
@@ -34,134 +38,149 @@ h1 {
 
 #week1_check{
     position: fixed;
-    left: 80px;
-    top:280px;
+    left: 130px;
+    top:230px;
 }
 
 #week2_check{
     position: fixed;
-    left: 100px;
-    top:380px;
+    left: 150px;
+    top:330px;
 }
 
 #week3_check{
     position: fixed;
-    left: 120px;
-    top:320px;
+    left: 170px;
+    top:270px;
 }
 
 #week4_check{
     position: fixed;
-    left: 140px;
-    top:380px;
+    left: 190px;
+    top:330px;
 }
 
 #week5_check{
     position: fixed;
-    left: 160px;
-    top:280px;
+    left: 210px;
+    top:230px;
 }
 
 #week6_check{
     position: fixed;
-    left: 160px;
-    top:450px;
+    left: 210px;
+    top:400px;
 }
 
 #week7_check{
     position: fixed;
-    left: 80px;
-    top:450px;
+    left: 130px;
+    top:400px;
 }
 
 #E1_check{
     position: fixed;
-    left: 80px;
-    top:475px;
+    left: 130px;
+    top:425px;
 }
 
 #E2_check{
     position: fixed;
-    left: 80px;
-    top:525px;
+    left: 130px;
+    top:475px;
 }
 
 #E3_check{
     position: fixed;
-    left: 120px;
-    top:450px;
+    left: 170px;
+    top:400px;
 }
 
 #E4_check{
     position: fixed;
-    left: 120px;
-    top:550px;
+    left: 170px;
+    top:500px;
 }
 
 #week11_check{
     position: fixed;
-    left: 120px;
-    top:500px;
+    left: 170px;
+    top:450px;
 }
 
 #week9_check{
     position: fixed;
-    left: 80px;
-    top:500px;
+    left: 130px;
+    top:450px;
 }
 
 #week10_check{
     position: fixed;
-    left: 160px;
-    top:550px;
+    left: 210px;
+    top:500px;
 }
 
 #week8_check{
     position: fixed;
-    left: 80px;
-    top:550px;
+    left: 130px;
+    top:500px;
 }
 
 #w1_check{
     position: fixed;
-    left: 120px;
-    top:620px;
+    left: 170px;
+    top:570px;
 }
 
 #Week12_check{
     position: fixed;
-    left: 80px;
-    top:620px;
+    left: 130px;
+    top:570px;
 }
 
 #W2_check{
     position: fixed;
-    left: 80px;
-    top:670px;
+    left: 130px;
+    top:620px;
 }
 
 #W3_check{
     position: fixed;
-    left: 120px;
-    top:670px;
+    left: 170px;
+    top:620px;
 }
 #W4_check{
     position: fixed;
-    left: 120px;
-    top:720px;
+    left: 170px;
+    top:670px;
 }
 #W5_check{
     position: fixed;
-    left: 80px;
-    top:720px;
+    left: 130px;
+    top:670px;
 }
 #W6_check{
     position: fixed;
-    left: 150px;
-    top:690px;
+    left: 190px;
+    top:645px;
 }
 #W7_check{
     position: fixed;
-    left: 150px;
-    top:645px;
+    left: 190px;
+    top:595px;
 }
+
+@keyframes color {
+    0%   { background: color lightskyblue; }
+    25%  { background-color:rgb(40, 163, 239);  }
+    75% { background-color: #f25738; }
+    100%   { background: color lightskyblue; }
+  }
+
+@keyframes scale {
+    0%   { scale: 1; }
+    25%  { scale: 1.15;  }
+    50%  { scale: 1.2; }
+    75%  { scale: 1.15; }
+    100% { scale: 1; }
+  }
