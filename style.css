@@ -1,6 +1,6 @@
 p {
     margin:2%; 
-    width: 80%;
+    width: 40%;
     font-style: oblique; 
     font-family: cursive; 
     font-size: large;
@@ -16,6 +16,12 @@ p {
     margin-right: auto;
 
     border-radius: 1000px;
+
+    display: none;
+}
+
+a{
+    text-decoration: none;
 }
 
 p:hover {
@@ -24,4 +30,138 @@ p:hover {
 
 h1 {
     margin-top: 30px;
+}
+
+#week1_check{
+    position: fixed;
+    left: 80px;
+    top:280px;
+}
+
+#week2_check{
+    position: fixed;
+    left: 100px;
+    top:380px;
+}
+
+#week3_check{
+    position: fixed;
+    left: 120px;
+    top:320px;
+}
+
+#week4_check{
+    position: fixed;
+    left: 140px;
+    top:380px;
+}
+
+#week5_check{
+    position: fixed;
+    left: 160px;
+    top:280px;
+}
+
+#week6_check{
+    position: fixed;
+    left: 160px;
+    top:450px;
+}
+
+#week7_check{
+    position: fixed;
+    left: 80px;
+    top:450px;
+}
+
+#E1_check{
+    position: fixed;
+    left: 80px;
+    top:475px;
+}
+
+#E2_check{
+    position: fixed;
+    left: 80px;
+    top:525px;
+}
+
+#E3_check{
+    position: fixed;
+    left: 120px;
+    top:450px;
+}
+
+#E4_check{
+    position: fixed;
+    left: 120px;
+    top:550px;
+}
+
+#week11_check{
+    position: fixed;
+    left: 120px;
+    top:500px;
+}
+
+#week9_check{
+    position: fixed;
+    left: 80px;
+    top:500px;
+}
+
+#week10_check{
+    position: fixed;
+    left: 160px;
+    top:550px;
+}
+
+#week8_check{
+    position: fixed;
+    left: 80px;
+    top:550px;
+}
+
+#w1_check{
+    position: fixed;
+    left: 120px;
+    top:620px;
+}
+
+#Week12_check{
+    position: fixed;
+    left: 80px;
+    top:620px;
+}
+
+#W2_check{
+    position: fixed;
+    left: 80px;
+    top:670px;
+}
+
+#W3_check{
+    position: fixed;
+    left: 120px;
+    top:670px;
+}
+#W4_check{
+    position: fixed;
+    left: 120px;
+    top:720px;
+}
+#W5_check{
+    position: fixed;
+    left: 80px;
+    top:720px;
+}
+#W6_check{
+    position: fixed;
+    left: 150px;
+    top:690px;
+}
+#W7_check{
+    position: fixed;
+    left: 150px;
+    top:645px;
 }
