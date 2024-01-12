@@ -243,8 +243,6 @@ function information(i){
             
     if (i.path[0].innerText == stroke.name){
     i.path[0].innerText = stroke.meaning
-    // i.path[0].style.fontSize = "50px"
-    // i.path[0].style.padding = "16px"
     }
     
     });
@@ -287,10 +285,11 @@ function information_out_pianpang(i){
         }
     }
 }
-
+if (i.path && i.path.length > 0) {
 let theMain = document.getElementById(""+i.path[0].id+"")
-        theMain.style.fontSize = "50px"
+        theMain.style.fontSize = "50px"}
 }
+
 
 function information_out_bushou(i){
     if(page_on == 3){
@@ -303,12 +302,14 @@ function information_out_bushou(i){
 
 let theMain = document.getElementById(""+i.path[0].id+"")
         theMain.style.fontSize = "50px"
+        console.log(i.path[0].innerText)
 }
 
 function focus_upper(i){
+  console.log(event.target.firstChild.nodeValue)
     audio_key.play();
     for(let r = 0; r<16; r++){
-        if(i.path[0].innerText == upper_strokes_data[r]){
+        if(event.target.firstChild.nodeValue == upper_strokes_data[r]){
             audio_key.play();
             var div = document.createElement('div');
                 div.className = "draggable";
@@ -365,7 +366,7 @@ function focus_upper(i){
             }
         }
         }
-        if(i.path[0].innerText == bottom_strokes_data[r]){
+        if(event.target.firstChild.nodeValue == bottom_strokes_data[r]){
             var div = document.createElement('div');
             div.className = "draggable";
             div.idName = '' + r + ''
@@ -430,7 +431,7 @@ function focus_upper(i){
       
         }
 
-            if (i.path[0].innerText == pianpang_information[r]){
+            if (event.target.firstChild.nodeValue == pianpang_information[r]){
                 console.log(i.path[0].innerText)
             var div = document.createElement('div');
                 div.className = "draggable";
@@ -476,7 +477,7 @@ function focus_upper(i){
             
 
 
-        if(i.path[0].innerText == bushou_information[r]){
+        if(event.target.firstChild == bushou_information[r]){
             var div = document.createElement('div');
                 div.className = "draggable";
                 div.innerText = bushou[r];
